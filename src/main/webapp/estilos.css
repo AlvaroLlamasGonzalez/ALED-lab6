@@ -1,0 +1,22 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font: 16px Georgia, serif;
+}
+.cabecera, .nav-bar, .contenido {
+    background: #eee;
+    border: 1px solid #999;
+    padding: 1%;
+    margin-bottom: 1px;
+    color: black;
+}
+.pie-pagina {
+    background: #eee;
+    text-align: center;
+}
+.nav-bar {
+  margin: 0px 10px 0px 0px; 
+}
