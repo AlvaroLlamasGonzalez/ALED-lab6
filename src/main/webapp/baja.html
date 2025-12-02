@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Baja de Pacientes</title>
+<link rel="stylesheet" href="estilos.css">
+    <script src="gestion_pacientes.js"></script>
+ </head>
+ <body>
+    <header>
+ 	<table>
+			 <tr>
+				 <td>
+						 <img src="logo.png" alt="Logo Asignatura">
+ 				</td>
+			 <td>
+ 					<h1>Gestion Hospitalaria</h1>
+ 				</td>
+ 			</tr>
+	 </table>
+ </header>
+ <nav class="nav-bar">
+        <a href="index.html">Inicio</a> 
+        <a href="alta.html">Alta</a> 
+        <a href="baja.html">Baja</a> 
+        <a href="consulta.html">Consulta</a>
+    </nav>
+    <section class="contenido">
+        <h2>Baja</h2>
+        
+        <form method="POST" action="baja">
+            
+            <label for="paciente">Seleccione paciente a dar de baja:</label>
+            <select id="paciente" name="dni">
+                <option value="11111111A">Pepito Grillo</option>
+                <option value="22222222B">Maria Lopez</option>
+                <option value="33333333C">Juan Perez</option>
+                <option value="44444444D">Elena Garcia</option>
+            </select>
+             <input type="submit" value="Submit">
+
+        </form>
+    </section>
+    <footer class="pie-pagina">
+        <p>Álvaro Llamas González | Enviar email a <a href="alvaro.llamasgon@alumnos.upm.es">alvaro.llamasgon@alumnos.upm.es</a></p>
+    </footer>
+</body>
+</html>

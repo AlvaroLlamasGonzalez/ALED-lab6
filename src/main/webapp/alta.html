@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Alta de Pacientes</title>
+<link rel="stylesheet" href="estilos.css">
+    <script src="gestion_pacientes.js"></script>
+ </head>
+ <body>
+    <header>
+ 	<table>
+			 <tr>
+				 <td>
+						 <img src="logo.png" alt="Logo Asignatura">
+ 				</td>
+			 <td>
+ 					<h1>Gestion Hospitalaria</h1>
+ 				</td>
+ 			</tr>
+	 </table>
+ </header>
+ <nav class="nav-bar">
+        <a href="index.html">Inicio</a> 
+        <a href="alta.html">Alta</a> 
+        <a href="baja.html">Baja</a> 
+        <a href="consulta.html">Consulta</a>
+    </nav>
+    <section class="contenido">
+        <h2>Alta</h2>
+        
+        <form name="formulario" method="POST" action="alta" onsubmit="return validar();">
+            
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required><br><br>
+
+            <label for="dni_input">DNI:</label>
+            <input type="text" id="dni_input" name="dni" required><br><br>
+
+            <input type="submit" value="Enviar">
+
+        </form>
+    </section>
+    <footer class="pie-pagina">
+        <p>Álvaro Llamas González | Enviar email a <a href="alvaro.llamasgon@alumnos.upm.es">alvaro.llamasgon@alumnos.upm.es</a></p>
+    </footer>
+</body>
+</html>
